@@ -37,4 +37,15 @@ def test_middle_school_student_summary_with_transportation():
     pass
 
 def test_middle_school_student_summary_without_transportation():
-    pass
+        # Arrange
+        name = "Ellis"
+        grade = "junior"
+        classes = ["Painting"]
+    
+        # Act
+        ellis = MiddleSchoolStudent(name, grade, classes)
+        summary = ellis.summary()
+    
+        # Assert
+        assert "Ellis doesn't have transportation." in summary
+    
