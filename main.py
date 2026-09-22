@@ -47,7 +47,10 @@ john = MiddleSchoolStudent(
     ],
     gets_transportation=True
 )
-
-students = [quinn, claire, john]
+# fourt instance
+ellis = MiddleSchoolStudent(
+    "ellis", "junior",["Painting"], gets_transportation=True
+)
+students = [quinn, claire, john, ellis]
 for student in students:
     print(student.summary())

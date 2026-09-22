@@ -16,7 +16,22 @@ def test_new_valid_middle_school_student_gets_transportation():
     assert ellis.gets_transportation
 
 def test_new_valid_middle_school_student_with_defaults():
-    pass
+    
+    # Arrange
+    name = "Ellis"
+    grade = "junior"
+    classes = ["Painting"]
+
+    # Act
+    ellis = MiddleSchoolStudent(name, grade, classes)
+
+    # Assert
+    assert ellis.name == name
+    assert ellis.grade == grade
+    assert ellis.classes == classes
+    assert len(ellis.classes) == 1
+    assert ellis.gets_transportation == False # Explicitly provide True
+
 
 def test_middle_school_student_summary_with_transportation():
     pass
