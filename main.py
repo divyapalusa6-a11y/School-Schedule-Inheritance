@@ -47,7 +47,7 @@ john = MiddleSchoolStudent(
     ],
     gets_transportation=True
 )
-# fourt instance
+# fourth instance
 ellis = MiddleSchoolStudent(
     "ellis", "junior",["Painting"], gets_transportation=True
 )
