@@ -30,7 +30,7 @@ def test_new_valid_middle_school_student_with_defaults():
     assert ellis.grade == grade
     assert ellis.classes == classes
     assert len(ellis.classes) == 1
-    assert ellis.gets_transportation == False # Explicitly provide True
+    assert ellis.gets_transportation == False 
 
 
 def test_middle_school_student_summary_with_transportation():
