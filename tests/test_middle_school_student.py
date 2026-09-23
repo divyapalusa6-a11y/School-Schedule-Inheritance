@@ -30,11 +30,9 @@ def test_new_valid_middle_school_student_with_defaults():
     assert ellis.grade == grade
     assert ellis.classes == classes
     assert len(ellis.classes) == 1
-<<<<<<< HEAD
     assert ellis.gets_transportation == False 
-=======
     assert ellis.gets_transportation == False
->>>>>>> d2f37ef157b27f8d31632129f23cfbda982556fb
+
 
 
 def test_middle_school_student_summary_with_transportation():
