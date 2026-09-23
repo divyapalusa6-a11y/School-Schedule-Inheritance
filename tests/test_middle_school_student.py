@@ -38,7 +38,28 @@ def test_new_valid_middle_school_student_with_defaults():
 
 
 def test_middle_school_student_summary_with_transportation():
-    pass
+    # Arrange
+    name = "Ella"
+    grade = "grade 6"
+    classes = []
+
+    # Act
+    ella = MiddleSchoolStudent(name, grade, classes, gets_transportation=True)
+    summary = ella.summary()
+
+    # Assert
+    assert summary == "Ella is a grade 6 enrolled in 0 classes: \nElla has transportation."
 
 def test_middle_school_student_summary_without_transportation():
-    pass
+    # Arrange
+    name = "Ellis"
+    grade = "junior"
+    classes = ["Painting"]
+    
+    # Act
+    ellis = MiddleSchoolStudent(name, grade, classes)
+    summary = ellis.summary()
+    
+    # Assert
+    assert "Ellis doesn't have transportation." in summary
+    
